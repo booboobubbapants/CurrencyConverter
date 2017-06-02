@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITextFieldDelegate
         poundLabel.text = "\(dollarAmount * poundRate)"
         yenLabel.text = "\(dollarAmount * yenRate)"
         euroLabel.text = "\(dollarAmount * euroRate)"
+        rupeeLabel.text = "\(dollarAmount * rupeeRate)"
         dollarAmount = 0.0
     }
     
@@ -28,11 +29,14 @@ class ViewController: UIViewController, UITextFieldDelegate
     @IBOutlet weak var poundLabel: UILabel!
     @IBOutlet weak var yenLabel: UILabel!
     @IBOutlet weak var euroLabel: UILabel!
+    @IBOutlet weak var rupeeLabel: UILabel!
+    
     @IBOutlet weak var inputTextField: UITextField!
     
-    let poundRate = 0.69
-    let yenRate = 113.94
+    let poundRate = 0.78
+    let yenRate = 111.54
     let euroRate = 0.89
+    let rupeeRate = 0.016
     var dollarAmount = 0.0
     
     override func viewDidLoad() {
@@ -58,4 +62,4 @@ class ViewController: UIViewController, UITextFieldDelegate
 
 
 }
-//Modification for testing
+
